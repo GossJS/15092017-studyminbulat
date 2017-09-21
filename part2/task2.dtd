@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+        <!ELEMENT МоиЗнания (УстройствоСетей, Языки)>
+        <!ELEMENT УстройствоСетей (OSI)>
+        <!ELEMENT OSI (HTTP)>
+        <!ELEMENT HTTP (HTTPS)>
+        <!ELEMENT HTTPS (SSL)>
+        <!ELEMENT SSL EMPTY>
+        <!ELEMENT Языки (Разметки, Программирования)>
+        <!ELEMENT Разметки (HTML, CSS, XML)>
+        <!ELEMENT HTML (DOM)>
+        <!ELEMENT DOM EMPTY>
+        <!ELEMENT CSS EMPTY>
+        <!ELEMENT XML EMPTY>
+        <!ELEMENT Программирования (Язык+)>
+        <!ELEMENT Язык (Фреймворк*)>
+        <!ELEMENT Фреймворк EMPTY>
+        <!ATTLIST Язык Название CDATA #REQUIRED>
+        <!ATTLIST Фреймворк Название CDATA #REQUIRED>

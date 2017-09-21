@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+        <!ELEMENT visits (most-popular-ip, desktop, mobile, popular-ips)>
+        <!ELEMENT most-popular-ip (#PCDATA)>
+        <!ELEMENT desktop (platform*)>
+        <!ELEMENT mobile (platform*)>
+        <!ELEMENT popular-ips (ip*)>
+        <!ELEMENT platform (#PCDATA)>
+        <!ELEMENT ip EMPTY>
+        <!ATTLIST platform name CDATA #REQUIRED>
+        <!ATTLIST ip addr CDATA #REQUIRED>
+        <!ATTLIST ip frequency CDATA #REQUIRED>
