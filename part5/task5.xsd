@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="minbulat"
+           xmlns="minbulat"
+           elementFormDefault="qualified">
+
+    <xs:element name="таблица">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="студент">
+                    <xs:complexType>
+                        <!--<xs:attribute name="имя" type="xs:string"/>-->
+                        <xs:sequence>
+                            <xs:element name="отметка" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

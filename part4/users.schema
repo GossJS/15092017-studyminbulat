@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "https://kodaktor.ru/j/users.schema",
+  "properties": {
+    "users": {
+      "id": "/properties/users",
+      "items": {
+        "id": "/properties/users/items",
+        "properties": {
+          "login": {
+            "default": "student",
+            "description": "Login",
+            "id": "/properties/users/items/properties/login",
+            "title": "The login schema",
+            "type": "string"
+          },
+          "password": {
+            "default": "tneduts",
+            "description": "Password",
+            "id": "/properties/users/items/properties/password",
+            "title": "The password schema",
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
+      "type": "array"
+    }
+  },
+  "type": "object"
+}
